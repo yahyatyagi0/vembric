@@ -139,7 +139,10 @@ export default function ListAllGamesPage() {
 
       {/* Sample Response */}
       <section>
-        <h4 className="text-base font-medium mb-2">Response</h4>
+        <h4 className="text-base font-medium mb-2 flex items-center gap-2">
+          Response
+          <img src="/images/logo.svg" alt="JSON" className="w-5 h-5" />
+        </h4>
         <SyntaxHighlighter language="json" style={vscDarkPlus} wrapLongLines className="rounded-md text-sm">
           {JSON.stringify(data.response, null, 2)}
         </SyntaxHighlighter>
